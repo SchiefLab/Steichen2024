@@ -8,6 +8,8 @@ There are both local and remote datasets in this repository.
 
 ### Local datasets
 
+---
+
 These are datasets in this repository. They are stored in the `data/` directory.
 
 1. [`data/all_processed_combined.feather`](data/all_processed_combined.feather) is the processed 10X dataset with paired heavy and light chains as well as the single cell sort paired data from Sanger sequencing. In addition to having all [AIRR compliant fields](https://docs.airr-community.org/en/stable/datarep/rearrangements.html#fields), this dataset contains the following:
@@ -29,3 +31,15 @@ These are datasets in this repository. They are stored in the `data/` directory.
 | N332-GT5 KO | The ELISA signal for the KO                                                                                                         |
 | B23         | Not used                                                                                                                            |
 | IgG.1       | Not used                                                                                                                            |
+
+### Remote datasets
+
+---
+
+These are datasets that are too large to store in this repository. They are stored in the an AWS S3 bucket.
+
+**74 Macaque naive BCR sequences found in this study**
+
+    a. Annotated in feather format and tar zipped [here](https://macaquenaive.s3.us-west-2.amazonaws.com/annotated_feather.tgz). This data does not contain the animal IDs but contains the SRA number.
+
+    b. Annotated in parquet format and tar zipped [here](https://macaquenaive.s3.us-west-2.amazonaws.com/parquet.tgz). This data has the animal IDs and after its uncompressed it can be used in AWS EMR.
