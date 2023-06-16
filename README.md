@@ -40,6 +40,12 @@ These are datasets that are too large to store in this repository. They are stor
 
 **74 Macaque naive BCR sequences found in this study**
 
-    a. Annotated in feather format and tar zipped [here](https://macaquenaive.s3.us-west-2.amazonaws.com/annotated_feather.tgz). This data does not contain the animal IDs but contains the SRA number.
+a. Annotated in feather format and tar zipped [here](https://macaquenaive.s3.us-west-2.amazonaws.com/annotated_feather.tgz). This data does not contain the animal IDs but contains the SRA number.
 
-    b. Annotated in parquet format and tar zipped [here](https://macaquenaive.s3.us-west-2.amazonaws.com/parquet.tgz). This data has the animal IDs and after its uncompressed it can be used in AWS EMR.
+b. Annotated in parquet format and tar zipped [here](https://macaquenaive.s3.us-west-2.amazonaws.com/parquet.tgz). This data has the animal IDs and after its uncompressed it can be used in AWS EMR.
+
+## Notebooks
+
+We also are adding local notebooks and EMR notebooks that can be run on the 74 macaque naive sequences.
+
+### Local Notebooks
