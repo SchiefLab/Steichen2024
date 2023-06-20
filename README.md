@@ -29,8 +29,8 @@ These are datasets in this repository. They are stored in the `data/` directory.
 | IgG         | The ELISA signal for IgG                                                                                                            |
 | N332-GT5 WT | The ELISA signal for GT5                                                                                                            |
 | N332-GT5 KO | The ELISA signal for the KO                                                                                                         |
-| B23         | Not used                                                                                                                            |
-| IgG.1       | Not used                                                                                                                            |
+| B23         | The boosting reagent ELISA                                                                                                          |
+| IgG.1       | The boolean measure for if it is an IgG                                                                                             |
 
 ### Remote datasets
 
@@ -49,3 +49,15 @@ b. Annotated in parquet format and tar zipped [here](https://macaquenaive.s3.us-
 We also are adding local notebooks and EMR notebooks that can be run on the 74 macaque naive sequences.
 
 ### Local Notebooks
+
+[Notebooks/Process Seqs.ipynb](Notebooks/Process%20Seqs.ipynb) reads in all 10X and single-cell sorting paired sequences from [data/all_processed_combined.feather](data/all_processed_combined.feather) and adds the following fields:
+
+1. Add closest human ortholog to the V and J genes
+2. Add the HCDR3 and LCDR3 length
+3. Annotate sequences with the BG18 type I criteria.
+4. Annotate sequences with the BG18 type I alternative criteria.
+5. Assign precursor definitions
+6. Run mutational analysis
+7. Run clustering on BG18 sequences using the criteria from the paper.
+
+### EMR Notebooks
