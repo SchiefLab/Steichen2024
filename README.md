@@ -12,7 +12,7 @@ There are both local and remote datasets in this repository.
 
 These are datasets in this repository. They are stored in the `data/` directory.
 
-1. [`data/all_processed_combined.feather`](data/all_processed_combined.feather) is the processed 10X dataset with paired heavy and light chains as well as the single cell sort paired data from Sanger sequencing. In addition to having all [AIRR compliant fields](https://docs.airr-community.org/en/stable/datarep/rearrangements.html#fields), this dataset contains the following:
+1. [`data/all_processed_combined.csv.gz`](data/all_processed_combined.csv.gz) is the processed 10X dataset with paired heavy and light chains as well as the single cell sort paired data from Sanger sequencing. In addition to having all [AIRR compliant fields](https://docs.airr-community.org/en/stable/datarep/rearrangements.html#fields), this dataset contains the following:
 
 | Field       | Description                                                                                                                         |
 | :---------- | :---------------------------------------------------------------------------------------------------------------------------------- |
@@ -32,6 +32,14 @@ These are datasets in this repository. They are stored in the `data/` directory.
 | B23         | The boosting reagent ELISA                                                                                                          |
 | IgG.1       | The boolean measure for if it is an IgG                                                                                             |
 
+2. [`data/all_processed_combined_personalized.csv.gz`](data/all_processed_combined_personalized.csv.gz) is the same as `data/all_processed_combined.csv.gz` but with the sequences personalized to the IGHD3-43 allele haplotypes found in [data/genotypes.xlsx](data/genotype.xlsx). The haplotypes are:
+
+   a. `IGHD3-43*01/IGHD3-43*01`
+
+   b. `IGHD3-43*01/IGHD3-43*01_S8240`
+
+   c. `IGHD3-43*01_S8240/IGHD3-43*01_S8240`
+
 ### Remote datasets
 
 ---
@@ -46,11 +54,11 @@ b. Annotated in parquet format and tar zipped [here](https://macaquenaive.s3.us-
 
 ## Notebooks
 
-We also are adding local notebooks and EMR notebooks that can be run on the 74 macaque naive sequences.
+We also are adding local notebooks and EMR notebooks that were used in this study.
 
 ### Local Notebooks
 
-[Personalize Seqs.ipynb](local_notebooks/Personalize%20Seqs.ipynb) reads in all 10X data from [data/all_processed_combined.feather](data/all_processed_combined.feather) and reannoates the sequences based on the IGHD3-43 allele haplotypes found in [data/genotypes.xlsx]
+[Personalize Seqs.ipynb](local_notebooks/Personalize%20Seqs.ipynb) reads in all 10X data from [data/all_processed_combined.feather](data/all_processed_combined.feather) and reannotates the sequences based on the IGHD3-43 allele haplotypes found in [data/genotypes.xlsx](data/genotype.xlsx)
 
 [Process Seqs.ipynb](local_notebooks/Process%20Seqs.ipynb) reads in all 10X and single-cell sorting paired and personalized sequences from [data/all_processed_combined_personalized.feather](data/all_processed_combined_personalized.feather) and adds the following fields:
 
