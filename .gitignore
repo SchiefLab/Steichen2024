@@ -2,3 +2,6 @@ local_notebooks/.ipynb_checkpoints/Process Seqs-checkpoint.ipynb
 local_notebooks/Untitled.ipynb
 .gitignore
 local_notebooks/.ipynb_checkpoints/Untitled-checkpoint.ipynb
+data/~$genotype.xlsx
+.gitignore
+data/all_processed_combined_personalized.csv
