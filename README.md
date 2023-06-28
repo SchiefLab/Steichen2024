@@ -50,7 +50,9 @@ We also are adding local notebooks and EMR notebooks that can be run on the 74 m
 
 ### Local Notebooks
 
-[Notebooks/Process Seqs.ipynb](Notebooks/Process%20Seqs.ipynb) reads in all 10X and single-cell sorting paired sequences from [data/all_processed_combined.feather](data/all_processed_combined.feather) and adds the following fields:
+[Personalize Seqs.ipynb](local_notebooks/Personalize%20Seqs.ipynb) reads in all 10X data from [data/all_processed_combined.feather](data/all_processed_combined.feather) and reannoates the sequences based on the IGHD3-43 allele haplotypes found in [data/genotypes.xlsx]
+
+[Process Seqs.ipynb](local_notebooks/Process%20Seqs.ipynb) reads in all 10X and single-cell sorting paired and personalized sequences from [data/all_processed_combined_personalized.feather](data/all_processed_combined_personalized.feather) and adds the following fields:
 
 1. Add closest human ortholog to the V and J genes
 2. Add the HCDR3 and LCDR3 length
