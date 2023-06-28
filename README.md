@@ -62,6 +62,6 @@ We also are adding local notebooks and EMR notebooks that can be run on the 74 m
 
 ### EMR Notebooks
 
-https://github.com/SchiefLab/Steichen2023/blob/main/emr_notebooks/BG18%20human%20precursor%202023.ipynb searched for human BG18-like precursors and calculate their frequencies on NGS datasets of 1.1 billion human BCR heavy chain sequences from 14 human donors that were previously described (Briney et al., 2019; Steichen et al., 2019; Willis et al., 2023). 
+[BG18 human precursors](emr_notebooks/BG18%20human%20precursor%202023.ipynb) searched for human BG18-like precursors and calculate their frequencies on NGS datasets of 1.1 billion human BCR heavy chain sequences from 14 human donors that were previously described (Briney et al., 2019; Steichen et al., 2019; Willis et al., 2023).
 
-https://github.com/SchiefLab/Steichen2023/blob/main/emr_notebooks/BG18%20macaque%20precursor%202023.ipynb searched for rhesus macaque BG18-like precursors and calculate their frequencies on 154 datasets of 95.4 million macaque BCR sequences from 60 macaques. 
+[BG18 macaque precursors](emr_notebooks/BG18%20macaque%20precursor%202023.ipynb) searched for rhesus macaque BG18-like precursors and calculate their frequencies on 154 datasets of 95.4 million macaque BCR sequences from 60 macaques.
