@@ -64,8 +64,8 @@ We also are adding local notebooks and EMR notebooks that were used in this stud
 
 1. Add closest human ortholog to the V and J genes
 2. Add the HCDR3 and LCDR3 length
-3. Annotate sequences with the BG18 type I criteria.
-4. Annotate sequences with the BG18 type I alternative criteria.
+3. Annotate sequences with BG18 type I criteria.
+4. Annotate sequences with BG18 type I criteria with alternative D3-41 reading frame.
 5. Assign precursor definitions
 6. Run mutational analysis
 7. Run clustering on BG18 sequences using the criteria from the paper.
