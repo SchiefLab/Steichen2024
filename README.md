@@ -1,8 +1,8 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10701311.svg)](https://doi.org/10.5281/zenodo.10701311)
 
-# Steichen2023
+# Steichen2024
 
-This is the public code and data repository for Steichen et al. 2023.
+This is the public code and data repository for Steichen et al. 2024.
 
 ## Data
 
