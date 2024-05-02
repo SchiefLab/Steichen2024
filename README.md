@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10701311.svg)](https://doi.org/10.5281/zenodo.10701311)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11106381.svg)](https://doi.org/10.5281/zenodo.11106381)
 
 # Steichen2024
 
